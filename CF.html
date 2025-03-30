@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolsa Technologies</title>
+    <link href = "style2.css" rel = "stylesheet">
+    <script src = "CFCalculator.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href = "index.html">Home</a>
+        <a href = "About.html">About</a>
+        <a class ="active" href = "CF.html">Carbon Footprint</a>
+        <a href = "Products.html">Products</a>
+        <a href = "ScheduleBooking.html">Schedule Booking</a>
+        <a id = "nav-image"><img src = "Images/search.jpg" height = "40px"></a>
+        <a id = "nav-image" href="Account.html"><img src = "Images/Account.png" height = "40px"></a>
+    </nav>
+
+    <img src = "Images/Logo.png" height = "100px">
+
+
+    <!--<h1>Carbon Footprint Calculator</h1>
+    <form id="carbonFootprintForm">
+        <label for="transport">How do you primarily commute?</label>
+        <select id="transport" required>
+            <option value="car">Car</option>
+            <option value="public_transport">Public Transport</option>
+            <option value="bike">Bike</option>
+            <option value="walk">Walk</option>
+        </select>
+        <br><br>
+
+        <label for="meatConsumption">How often do you eat meat?</label>
+        <select id="meatConsumption" required>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="rarely">Rarely</option>
+            <option value="never">Never</option>
+        </select>
+        <br><br>
+
+        <label for="energyUsage">What type of energy do you use at home?</label>
+        <select id="energyUsage" required>
+            <option value="fossil_fuels">Fossil Fuels</option>
+            <option value="renewable">Renewable</option>
+            <option value="mixed">Mixed</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Calculate Carbon Footprint</button>
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>-->
+
+    <h1>Carbon Footprint Calculator</h1>
+    <form id="carbonFootprintForm">
+        <div class="form-group">
+            <label for="transport">How do you primarily get around?</label>
+            <select id="transport" required>
+                <option value="10">Car</option>
+                <option value="5">Public Transport</option>
+                <option value="2">Bicycle</option>
+                <option value="1">Walking</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="energy">What type of energy do you use for your home?</label>
+            <select id="energy" required>
+                <option value="8">Electricity</option>
+                <option value="5">Gas</option>
+                <option value="1">Renewable</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="diet">What is your diet like?</label>
+            <select id="diet" required>
+                <option value="10">Meat-heavy</option>
+                <option value="5">Mixed</option>
+                <option value="3">Vegetarian</option>
+                <option value="1">Vegan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="waste">How do you manage your waste?</label>
+            <select id="waste" required>
+                <option value="10">Mostly landfill</option>
+                <option value="5">Some recycling</option>
+                <option value="2">Mostly recycling</option>
+                <option value="1">Zero waste</option>
+            </select>
+        </div>
+        <button type="submit">Calculate Score</button>
+    </form>
+
+    <h2 id="result" style="display:none;"></h2>
+</body>
+</html>
